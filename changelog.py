@@ -10,15 +10,21 @@ html_rows = []
 for file in os.listdir("changelog/html"):
     if file.endswith(".html"):
         with open("changelog/html/" + file, "r") as f:
-            # filename = {timestamp}-{git hash}.json
-            timestamp = file.split("-")[0]
-            git_hash = file.split("-")[1].split(".")[0]
             # read html
             data = f.read()
             # extract content from HTML <body> tag
             body = re.search(r'<body>(.*)</body>', data, re.DOTALL).group(1)
             # remove <div class="title">...</div> from body
             body = re.sub(r'<div class="title">.*</div>', "", body)
+            body = body.strip()
+
+            if len(body) == 0:
+                continue
+
+            # filename = {timestamp}-{git hash}.json
+            timestamp = file.split("-")[0]
+            git_hash = file.split("-")[1].split(".")[0]
+
             # html row: date, link to git commit, changes
             html_rows.append(f"""
             <div>
