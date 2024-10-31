@@ -60,6 +60,11 @@ code {
     z-index: 999;
 }
 
+.sub-title {
+    margin-left: -54px;
+    padding-left: 54px;
+}
+
 .wrapper {
     padding-left: 40px;
     border-left: 1px solid #016BF8;
@@ -95,6 +100,14 @@ code {
     top: 23px;
     border-radius: 100%;
     border: 5px solid #b4d4ff;
+}
+
+.dot.small {
+    width: 11px;
+    height: 11px;
+    left: -9px;
+    border-width: 3px;
+    top: 8px;
 }
 
 .tooltip {
@@ -162,6 +175,7 @@ code {
 }
 
 .summary > h3 {
+    position: relative;
     margin-top: 0;
     padding-top: 0;
     font-size: 1.5rem;
