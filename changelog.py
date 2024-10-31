@@ -8,7 +8,7 @@ import markdown
 
 def changelog():
     html_rows = []
-    for file in sorted(os.listdir("changelog/html")):
+    for file in sorted(os.listdir("changelog/html"), reverse=True):
         if file.endswith(".html"):
             with open("changelog/html/" + file, "r") as f:
                 # read html
