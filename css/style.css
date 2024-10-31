@@ -52,8 +52,8 @@ code {
 
 .title {
     font-size: 2rem;
-    margin: 1rem 0 0.5rem 0;
-    padding: 1rem 0;
+    margin: 1rem 0 0.5rem -40px;
+    padding: 1rem 0 1rem 40px;
     position: sticky;
     top: 121px;
     background-color: #fff;
@@ -91,7 +91,7 @@ code {
     height: 17px;
     background-color: #016BF8;
     position: absolute;
-    left: -54px;
+    left: -14px;
     top: 23px;
     border-radius: 100%;
     border: 5px solid #b4d4ff;
@@ -229,6 +229,17 @@ code {
 }
 
 .endpoint-changes {
+}
+
+
+.section {
+    margin-left: -40px;
+    padding-left: 54px;
+    border-bottom: 1px solid #dedede;
+}
+
+.section:hover {
+    background-color: #f4f4f4;
 }
 
 /** EXTERNAL LINKS **/

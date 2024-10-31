@@ -1,5 +1,3 @@
-# read all .json files from changelog/ folder, sorted asc and create a changelog.html file
-# with all the changes from the json files
 import json
 import os
 import re
