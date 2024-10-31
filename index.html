@@ -2,201 +2,7 @@
 <html lang="en">
 <head>
     <title>BestJobs API - Changelog</title>
-    <style>
-        @import url(//fonts.googleapis.com/css?family=Nunito);
-
-        * {
-            font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-
-        a {
-            color: #016BF8;
-            text-decoration: none;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        code {
-            background-color: #f4f4f4;
-            color: #222222;
-            padding: 0.2rem 0.5rem;
-            border-radius: 5px;
-            font-family: Monospace;
-        }
-
-        .title {
-            font-size: 2rem;
-            margin: 1rem 0 0.5rem 0;
-            position: relative;
-        }
-
-        .small {
-            font-size: 0.8rem;
-        }
-
-        .dot {
-            display: block;
-            width: 16px;
-            height: 16px;
-            background-color: #016BF8;
-            position: absolute;
-            left: -54px;
-            top:8px;
-            border-radius: 100%;
-            border: 5px solid #b4d4ff;
-        }
-
-        .wrapper {
-            padding-left: 40px;
-            border-left: 1px solid #016BF8;
-        }
-
-        .path {
-            color: #016BF8;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .endpoint {
-            color: #21313c;
-            line-height: 24px;
-            margin: 22px 0;
-        }
-
-        .endpoint-header {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .change-type {
-            box-sizing: border-box;
-            font-weight: 700;
-            font-size: 12px;
-            line-height: 16px;
-            border-radius: 5px;
-            height: 18px;
-            padding-left: 6px;
-            padding-right: 6px;
-            text-transform: uppercase;
-            border: 1px solid;
-            letter-spacing: 1px;
-            background-color: #E3FCF7;
-            border-color: #C0FAE6;
-            color: #00684A;
-            margin-top: 2px;
-        }
-
-        .change {
-        }
-
-        .breaking {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            margin-right: 5px;
-        }
-
-        .breaking-icon {
-            color: #DB3030;
-        }
-
-        .endpoint-changes {
-        }
-
-        .tooltip {
-            position: relative;
-        }
-
-        .tooltip:before {
-            content: attr(data-text);
-            position: absolute;
-
-
-            top: 50%;
-            transform: translateY(-50%);
-
-
-            left: 100%;
-            margin-left: 15px;
-
-
-            width: 200px;
-            padding: 10px;
-            border-radius: 10px;
-            background: #000;
-            color: #fff;
-            text-align: center;
-
-            display: none;
-        }
-
-        .tooltip:hover:before {
-            display: block;
-        }
-
-        .branding {
-            padding: 1rem;
-            background-color: #fff;
-            border-bottom: 1px solid #dedede;
-            box-shadow: #AAA 0 0 10px;
-            position: sticky;
-            top:0;
-            z-index: 9999;
-        }
-
-        .container {
-            padding: 2rem;
-        }
-
-        /* responsive */
-        /* small screen */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-            .branding h1 {
-                font-size: 1.5rem;
-            }
-        }
-        @media (min-width: 992px) {
-            .container {
-                padding: 2rem 10rem;
-            }
-            .branding {
-                padding: 2rem 10rem;
-            }
-
-        }
-
-        .summary {
-            padding:1rem 0 0 0;
-        }
-
-        .summary .content {
-            padding-left: 1rem;
-        }
-
-        .separator {
-            margin: 1rem 0;
-            border-top: 1px solid #dedede;
-            max-width: 50%;
-        }
-
-        .d-block {
-            display: block;
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -207,18 +13,17 @@
 <div class="container">
     <div class="wrapper">
         <h2 class="title"><span class="dot"></span> 2024-10-31</h2>
-                <div class="section">
-                    
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/dbefe754b8483e2571804a13ab31b19e4cabf034">view on GitHub &raquo; dbefe754</a>
-            <strong>feat: remove previously deprecated endpoint</strong>
-            <div class="content">
-                <p>refs: JIRA-987</p>
-            </div>
-        </div>
-        
-                    <div class="separator"></div>
-                    <div class="endpoint">
+<div class="section">
+    <div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/dbefe754b8483e2571804a13ab31b19e4cabf034">view on GitHub &raquo; dbefe754</a>
+    <h3><p>feat: remove previously deprecated endpoint</p></h3>
+    <div class="content">
+        <p>refs: <a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-987">BESTJOBS-987</a></p>
+    </div>
+</div>
+
+    <div class="separator"></div>
+    <div class="endpoint">
         <div class="endpoint-header">
             <span class="path">
                 <div class="">DELETE /v1/jobs</div>
@@ -234,32 +39,28 @@
             
         </ul>
     </div>
-                </div>
-    
-
-                <div class="section">
-                    
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/8a16d51dce18d26abb2937389c757cb1167527e5">view on GitHub &raquo; 8a16d51d</a>
-            <strong>feat: job list parameters</strong>
-            <div class="content">
-                <p>added <code>pagination</code>, <code>sort</code> and <code>filter</code></p>
+</div>
+<div class="section">
+    <div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/8a16d51dce18d26abb2937389c757cb1167527e5">view on GitHub &raquo; 8a16d51d</a>
+    <h3><p>feat: job list parameters</p></h3>
+    <div class="content">
+        <p>added <code>pagination</code>, <code>sort</code> and <code>filter</code></p>
 <p><strong>experimental</strong></p>
-<p>refs: JIRA-789</p>
-            </div>
-        </div>
-        
+<p>refs: <a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-789">BESTJOBS-789</a></p>
+    </div>
+</div>
 
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/87b6bf622fe76d268a7b2338a902800a4692f21d">view on GitHub &raquo; 87b6bf62</a>
-            <strong>feat: deprecate `DELETE /jobs` endpoint</strong>
-            <div class="content">
-                <p>refs: JIRA-789</p>
-            </div>
-        </div>
-        
-                    <div class="separator"></div>
-                    <div class="endpoint">
+<div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/87b6bf622fe76d268a7b2338a902800a4692f21d">view on GitHub &raquo; 87b6bf62</a>
+    <h3><p>feat: deprecate <code>DELETE /jobs</code> endpoint</p></h3>
+    <div class="content">
+        <p>refs: <a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-789">BESTJOBS-789</a></p>
+    </div>
+</div>
+
+    <div class="separator"></div>
+    <div class="endpoint">
         <div class="endpoint-header">
             <span class="path">
                 <div class="">GET /v1/employers</div>
@@ -395,21 +196,18 @@
             
         </ul>
     </div>
-                </div>
-    
+</div>
+<div class="section">
+    <div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/5904d1b0b5f400cc20716d8295b68da4b097cb90">view on GitHub &raquo; 5904d1b0</a>
+    <h3><p>feat: employer list, detail endpoints</p></h3>
+    <div class="content">
+        <p>refs: <a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-789">BESTJOBS-789</a></p>
+    </div>
+</div>
 
-                <div class="section">
-                    
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/5904d1b0b5f400cc20716d8295b68da4b097cb90">view on GitHub &raquo; 5904d1b0</a>
-            <strong>feat: employer list, detail endpoints</strong>
-            <div class="content">
-                <p>refs: JIRA-789</p>
-            </div>
-        </div>
-        
-                    <div class="separator"></div>
-                    <div class="endpoint">
+    <div class="separator"></div>
+    <div class="endpoint">
         <div class="endpoint-header">
             <span class="path">
                 <div class="">GET /v1/employers</div>
@@ -442,30 +240,27 @@
             
         </ul>
     </div>
-                </div>
-    
+</div>
 <h2 class="title"><span class="dot"></span> 2024-10-30</h2>
-                <div class="section">
-                    
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/568b7c0c2caf2109c7823a9261c5878b57926f52">view on GitHub &raquo; 568b7c0c</a>
-            <strong>feat: added `DELETE /jobs/{id}` endpoint</strong>
-            <div class="content">
-                <p>refs: JIRA-123</p>
-            </div>
-        </div>
-        
+<div class="section">
+    <div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/568b7c0c2caf2109c7823a9261c5878b57926f52">view on GitHub &raquo; 568b7c0c</a>
+    <h3><p>feat: added <code>DELETE /jobs/{id}</code> endpoint</p></h3>
+    <div class="content">
+        <p>refs: <a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-123">BESTJOBS-123</a></p>
+    </div>
+</div>
 
-        <div class="summary">
-            <a class="small d-block" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/003abcfc6eafd44951393c7190ec8d80579fcd71">view on GitHub &raquo; 003abcfc</a>
-            <strong>Merge pull request #4 from neogenro/feature/JIRA-123/delete-job</strong>
-            <div class="content">
-                <p>feat: added <code>DELETE /jobs/{id}</code> endpoint</p>
-            </div>
-        </div>
-        
-                    <div class="separator"></div>
-                    <div class="endpoint">
+<div class="summary">
+    <a class="small d-block github external-link muted" target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/003abcfc6eafd44951393c7190ec8d80579fcd71">view on GitHub &raquo; 003abcfc</a>
+    <h3><p>Merge pull request #4 from neogenro/feature/<a class="jira external-link" target="_blank" href="https://bestjobseu.atlassian.net/browse/BESTJOBS-123">BESTJOBS-123</a>/delete-job</p></h3>
+    <div class="content">
+        <p>feat: added <code>DELETE /jobs/{id}</code> endpoint</p>
+    </div>
+</div>
+
+    <div class="separator"></div>
+    <div class="endpoint">
         <div class="endpoint-header">
             <span class="path">
                 <div class="">DELETE /v1/jobs</div>
@@ -532,8 +327,7 @@
             
         </ul>
     </div>
-                </div>
-    
+</div>
     </div>
 </div>
 </body>
