@@ -51,7 +51,6 @@ def changelog():
 
     html_rows = []
     for day, rows in changelog_rows.items():
-        row = f"""<h2 class="title"><span class="dot"></span> {day}</h2>"""
         html_rows.append(
             f"""<h2 class="title"><span class="dot"></span> {day}</h2>""" +
             "\n".join(rows)
