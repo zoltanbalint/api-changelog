@@ -38,14 +38,46 @@ code {
 
 /** LAYOUT **/
 
+.small {
+    font-size: 0.8rem;
+}
+
+.d-block {
+    display: block;
+}
+
+.muted {
+    color: #777 !important;
+}
+
 .title {
     font-size: 2rem;
     margin: 1rem 0 0.5rem 0;
-    position: relative;
 }
 
-.small {
-    font-size: 0.8rem;
+.wrapper {
+    padding-left: 40px;
+    border-left: 1px solid #016BF8;
+}
+
+.branding {
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #dedede;
+    box-shadow: #AAA 0 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.separator {
+    margin: 1rem 0;
+    border-top: 1px solid #dedede;
+    max-width: 50%;
 }
 
 .dot {
@@ -60,24 +92,28 @@ code {
     border: 5px solid #b4d4ff;
 }
 
-.wrapper {
-    padding-left: 40px;
-    border-left: 1px solid #016BF8;
+.tooltip {
+    position: relative;
 }
 
-
-.branding {
-    padding: 1rem;
-    background-color: #fff;
-    border-bottom: 1px solid #dedede;
-    box-shadow: #AAA 0 0 10px;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
+.tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    margin-left: 15px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    display: none;
 }
 
-.container {
-    padding: 2rem;
+.tooltip:hover:before {
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -99,16 +135,6 @@ code {
         padding: 2rem 10rem;
     }
 
-}
-
-.separator {
-    margin: 1rem 0;
-    border-top: 1px solid #dedede;
-    max-width: 50%;
-}
-
-.d-block {
-    display: block;
 }
 
 /** CHANGELOG **/
@@ -191,43 +217,7 @@ code {
 .endpoint-changes {
 }
 
-.tooltip {
-    position: relative;
-}
-
-.tooltip:before {
-    content: attr(data-text);
-    position: absolute;
-
-
-    top: 50%;
-    transform: translateY(-50%);
-
-
-    left: 100%;
-    margin-left: 15px;
-
-
-    width: 200px;
-    padding: 10px;
-    border-radius: 10px;
-    background: #000;
-    color: #fff;
-    text-align: center;
-
-    display: none;
-}
-
-.tooltip:hover:before {
-    display: block;
-}
-
-
 /** EXTERNAL LINKS **/
-
-.muted {
-    color: #777 !important;
-}
 
 .external-link::after {
     display: inline-block;
