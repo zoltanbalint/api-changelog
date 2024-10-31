@@ -161,6 +161,168 @@
     <div class="wrapper">
         
                 <div class="section">
+                    <h2 class="title"><span class="dot"></span> 2024-10-31 08:33</h2>
+                    
+        <div class="summary">
+            <strong>feat: job list parameters</strong>
+            <div class="content">
+                <p>added <code>pagination</code>, <code>sort</code> and <code>filter</code></p>
+<p><strong>experimental</strong></p>
+<p>refs: JIRA-789</p>
+                <div class="link"><a target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/8a16d51dce18d26abb2937389c757cb1167527e5">View code changes [8a16d51d]</a></div>
+            </div>
+        </div>
+        
+
+        <div class="summary">
+            <strong>feat: deprecate `DELETE /jobs` endpoint</strong>
+            <div class="content">
+                <p>refs: JIRA-789</p>
+                <div class="link"><a target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/87b6bf622fe76d268a7b2338a902800a4692f21d">View code changes [87b6bf62]</a></div>
+            </div>
+        </div>
+        
+                    <div class="separator"></div>
+                    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">GET /v1/employers</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            endpoint added
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">GET /v1/employers/{id}</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            endpoint added
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">DELETE /v1/jobs</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            api operation id &#39;delete_delete_jobs&#39; removed and replaced with &#39;deleteJobs&#39;
+            </li>
+            
+            <li class="change">
+            
+            api tag &#39;Jobs&#39; added
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">GET /v1/jobs</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            api operation id &#39;get_list_jobs&#39; removed and replaced with &#39;getJobs&#39;
+            </li>
+            
+            <li class="change">
+            
+            api tag &#39;Jobs&#39; added
+            </li>
+            
+            <li class="change">
+            
+            added the new optional &#39;query&#39; request parameter &#39;filter&#39;
+            </li>
+            
+            <li class="change">
+            
+            added the new optional &#39;query&#39; request parameter &#39;limit&#39;
+            </li>
+            
+            <li class="change">
+            
+            added the new optional &#39;query&#39; request parameter &#39;page&#39;
+            </li>
+            
+            <li class="change">
+            
+            added the new optional &#39;query&#39; request parameter &#39;sort&#39;
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">POST /v1/jobs</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            api operation id &#39;post_post_job&#39; removed and replaced with &#39;postJob&#39;
+            </li>
+            
+            <li class="change">
+            
+            api tag &#39;Jobs&#39; added
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="endpoint">
+        <div class="endpoint-header">
+            <span class="path">
+                <div class="">DELETE /v1/jobs/{id}</div>
+            </span>
+            <div class="change-type">Updated</div>
+        </div>
+        <ul class="endpoint-changes">
+            
+            <li class="change">
+            
+            api tag &#39;Jobs&#39; added
+            </li>
+            
+        </ul>
+    </div>
+                </div>
+    
+
+                <div class="section">
                     <h2 class="title"><span class="dot"></span> 2024-10-30 15:36</h2>
                     
         <div class="summary">
