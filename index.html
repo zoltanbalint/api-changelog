@@ -5,7 +5,7 @@
         @import url(//fonts.googleapis.com/css?family=Nunito);
 
         * {
-            font-family: 'Nunito','Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-family: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
 
         a {
@@ -13,9 +13,39 @@
             text-decoration: none;
         }
 
+        h1 {
+            font-size: 3rem;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            color: #222222;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-family: Monospace;
+        }
+
         .title {
-            margin: 1em 0 0.5em 0;
-            font-size: 36px;
+            font-size: 2rem;
+            margin: 1rem 0 0.5rem 0;
+            position: relative;
+        }
+
+        .dot {
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-color: #016BF8;
+            position: absolute;
+            left: -54px;
+            top:8px;
+            border-radius: 100%;
+            border: 5px solid #b4d4ff;
+        }
+
+        .wrapper {
+            padding-left: 40px;
+            border-left: 1px solid #016BF8;
         }
 
         .path {
@@ -28,7 +58,7 @@
             color: #21313c;
             line-height: 24px;
             margin: 22px 0;
-        }        
+        }
 
         .endpoint-header {
             display: inline-flex;
@@ -72,43 +102,86 @@
         }
 
         .tooltip {
-            position:relative;  
+            position: relative;
         }
 
         .tooltip:before {
-            content: attr(data-text);  
-            position:absolute;
+            content: attr(data-text);
+            position: absolute;
 
-             
-            top:50%;
-            transform:translateY(-50%);
 
-             
-            left:100%;
-            margin-left:15px;  
+            top: 50%;
+            transform: translateY(-50%);
 
-             
-            width:200px;
-            padding:10px;
-            border-radius:10px;
-            background:#000;
+
+            left: 100%;
+            margin-left: 15px;
+
+
+            width: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #000;
             color: #fff;
-            text-align:center;
+            text-align: center;
 
-            display:none;  
-        }        
+            display: none;
+        }
 
         .tooltip:hover:before {
-            display:block;
+            display: block;
         }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .summary {
+            padding:1rem 0 0 0;
+        }
+
+        .summary .content {
+            padding-left: 1rem;
+        }
+
+        .separator {
+            margin: 1rem 0;
+            border-top: 1px solid #dedede;
+            max-width: 50%;
+        }
+
     </style>
 </head>
 <body>
 
-            <div>
-                <div class="title">2024-10-30 15:36</div>
-                <div class="link"><a href="#b5a8da63f969b3e7e5c4d9e5b528e23f82e48959">View code changes [b5a8da63]</a></div>
-                <div class="endpoint">
+<div class="container">
+    <div class="branding">
+        <h1>Changelog</h1>
+    </div>
+    <div class="wrapper">
+        
+                <div class="section">
+                    <h2 class="title"><span class="dot"></span> 2024-10-30 17:36</h2>
+                    
+        <div class="summary">
+            <strong>feat: added `DELETE /jobs/{id}` endpoint</strong>
+            <div class="content">
+                <p>refs: JIRA-123</p>
+                <div class="link"><a target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/568b7c0c2caf2109c7823a9261c5878b57926f52">View code changes [568b7c0c]</a></div>
+            </div>
+        </div>
+        
+
+        <div class="summary">
+            <strong>Merge pull request #4 from neogenro/feature/JIRA-123/delete-job</strong>
+            <div class="content">
+                <p>feat: added <code>DELETE /jobs/{id}</code> endpoint</p>
+                <div class="link"><a target="_blank" href="https://github.com/neogenro/test-openapi-changelog/commit/003abcfc6eafd44951393c7190ec8d80579fcd71">View code changes [003abcfc]</a></div>
+            </div>
+        </div>
+        
+                    <div class="separator"></div>
+                    <div class="endpoint">
         <div class="endpoint-header">
             <span class="path">
                 <div class="">DELETE /v1/jobs</div>
@@ -175,9 +248,10 @@
             
         </ul>
     </div>
-                <ul>
-            </div>
-
+                </div>
+    
+    </div>
+</div>
 </body>
 </html>
 

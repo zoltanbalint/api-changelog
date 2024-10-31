@@ -1,0 +1,59 @@
+{
+  "commits": [
+    {
+      "author": {
+        "email": "balint.istvan.zoltan@gmail.com",
+        "name": "Balint Zoltan",
+        "username": "zoltanbalint"
+      },
+      "committer": {
+        "email": "balint.istvan.zoltan@gmail.com",
+        "name": "Balint Zoltan",
+        "username": "zoltanbalint"
+      },
+      "distinct": false,
+      "id": "568b7c0c2caf2109c7823a9261c5878b57926f52",
+      "message": "feat: added `DELETE /jobs/{id}` endpoint\n\nrefs: JIRA-123",
+      "timestamp": "2024-10-30T13:12:45+02:00",
+      "tree_id": "ed47c0962533d1b9c05544e63975000176466db6",
+      "url": "https://github.com/neogenro/test-openapi-changelog/commit/568b7c0c2caf2109c7823a9261c5878b57926f52"
+    },
+    {
+      "author": {
+        "email": "zoltanbalint@users.noreply.github.com",
+        "name": "zoltanbalint",
+        "username": "zoltanbalint"
+      },
+      "committer": {
+        "email": "noreply@github.com",
+        "name": "GitHub",
+        "username": "web-flow"
+      },
+      "distinct": true,
+      "id": "003abcfc6eafd44951393c7190ec8d80579fcd71",
+      "message": "Merge pull request #4 from neogenro/feature/JIRA-123/delete-job\n\nfeat: added `DELETE /jobs/{id}` endpoint",
+      "timestamp": "2024-10-30T13:22:05+02:00",
+      "tree_id": "ed47c0962533d1b9c05544e63975000176466db6",
+      "url": "https://github.com/neogenro/test-openapi-changelog/commit/003abcfc6eafd44951393c7190ec8d80579fcd71"
+    }
+  ],
+  "compare": "https://github.com/neogenro/test-openapi-changelog/compare/637eab6a0fe1...003abcfc6eaf",
+  "head_commit": {
+    "author": {
+      "email": "zoltanbalint@users.noreply.github.com",
+      "name": "zoltanbalint",
+      "username": "zoltanbalint"
+    },
+    "committer": {
+      "email": "noreply@github.com",
+      "name": "GitHub",
+      "username": "web-flow"
+    },
+    "distinct": true,
+    "id": "003abcfc6eafd44951393c7190ec8d80579fcd71",
+    "message": "Merge pull request #4 from neogenro/feature/JIRA-123/delete-job\n\nfeat: added `DELETE /jobs/{id}` endpoint",
+    "timestamp": "2024-10-30T13:22:05+02:00",
+    "tree_id": "ed47c0962533d1b9c05544e63975000176466db6",
+    "url": "https://github.com/neogenro/test-openapi-changelog/commit/003abcfc6eafd44951393c7190ec8d80579fcd71"
+  }
+}
