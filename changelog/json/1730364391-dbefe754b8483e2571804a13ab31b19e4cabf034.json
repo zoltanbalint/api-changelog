@@ -1,0 +1,1 @@
+[{"id":"api-removed-with-deprecation","text":"api removed with deprecation","level":1,"operation":"DELETE","operationId":"deleteJobs","path":"/v1/jobs","source":"/output/latest.json","section":"paths"}]
