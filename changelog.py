@@ -5,8 +5,13 @@ import os
 import re
 import datetime
 import markdown
+from dotenv import load_dotenv
 
 def changelog():
+    load_dotenv()
+    branding = os.getenv("BRAND_NAME")
+    apidoc_url = os.getenv("APIDOC_URL")
+
     html_rows = []
     for file in sorted(os.listdir("changelog/html"), reverse=True):
         if file.endswith(".html"):
@@ -45,7 +50,12 @@ def changelog():
     with open("template.html", "r") as f:
         template = f.read()
         with open("index.html", "w") as index_f:
-            index_f.write(template.replace("{{ ROWS }}", "\n".join(html_rows))
+            index_f.write(
+                template
+                    .replace("{{ BRAND_NAME }}", branding)
+                    .replace("{{ APIDOC_URL }}", apidoc_url)
+                    .replace("{{ ROWS }}", "\n".join(html_rows)
+            )
     )
 
 
