@@ -53,6 +53,11 @@ code {
 .title {
     font-size: 2rem;
     margin: 1rem 0 0.5rem 0;
+    padding: 1rem 0;
+    position: sticky;
+    top: 121px;
+    background-color: #fff;
+    z-index: 999;
 }
 
 .wrapper {
@@ -87,7 +92,7 @@ code {
     background-color: #016BF8;
     position: absolute;
     left: -54px;
-    top: 8px;
+    top: 23px;
     border-radius: 100%;
     border: 5px solid #b4d4ff;
 }
@@ -124,6 +129,11 @@ code {
     .branding h1 {
         font-size: 1.5rem;
     }
+
+    .title {
+        top: 87px;
+        border-bottom: 1px solid #dedede;
+    }
 }
 
 @media (min-width: 992px) {
@@ -133,6 +143,10 @@ code {
 
     .branding {
         padding: 2rem 10rem;
+    }
+
+    .title {
+        top: 153px;
     }
 
 }
