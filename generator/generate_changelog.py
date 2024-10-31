@@ -58,7 +58,7 @@ def dump_section(day: str, rows: list) -> str:
 def dump_section_summary(_metadata: dict) -> str:
     rows = []
 
-    with open("templates/_summary.html", "r") as f:
+    with open("templates/_section_summary.html", "r") as f:
         summary_template = f.read()
 
     for commit in _metadata['commits']:
@@ -69,7 +69,7 @@ def dump_section_summary(_metadata: dict) -> str:
 
         rows.append(
             summary_template
-                .replace("{{ TITLE }}", markdown.markdown(title))
+                .replace("{{ TITLE }}", markdown.markdown(title).replace("<p>", "").replace("</p>", ""))
                 .replace("{{ BODY }}", markdown.markdown(content))
                 .replace("{{ GITHUB_COMMIT_URL }}", commit['url'])
                 .replace("{{ GITHUB_COMMIT_ID }}", commit['id'][:8])
