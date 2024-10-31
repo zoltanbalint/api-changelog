@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>BestJobs API - Changelog</title>
     <style>
         @import url(//fonts.googleapis.com/css?family=Nunito);
 
@@ -134,8 +135,38 @@
             display: block;
         }
 
+        .branding {
+            padding: 1rem;
+            background-color: #fff;
+            border-bottom: 1px solid #dedede;
+            box-shadow: #AAA 0 0 10px;
+            position: sticky;
+            top:0;
+            z-index: 9999;
+        }
+
         .container {
             padding: 2rem;
+        }
+
+        /* responsive */
+        /* small screen */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .branding h1 {
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                padding: 2rem 10rem;
+            }
+            .branding {
+                padding: 2rem 10rem;
+            }
+
         }
 
         .summary {
@@ -150,15 +181,6 @@
             margin: 1rem 0;
             border-top: 1px solid #dedede;
             max-width: 50%;
-        }
-
-        .branding {
-            padding: 1rem;
-            background-color: #f4f4f4;
-            border-bottom: 1px solid #dedede;
-            position: sticky;
-            top:0;
-            z-index: 9999;
         }
 
         html, body {
@@ -178,7 +200,7 @@
     <div class="wrapper">
         
                 <div class="section">
-                    <h2 class="title"><span class="dot"></span> 2024-10-31 08:46</h2>
+                    <h2 class="title"><span class="dot"></span> 2024-10-31 10:46</h2>
                     
         <div class="summary">
             <strong>feat: remove previously deprecated endpoint</strong>
@@ -209,7 +231,7 @@
     
 
                 <div class="section">
-                    <h2 class="title"><span class="dot"></span> 2024-10-31 08:33</h2>
+                    <h2 class="title"><span class="dot"></span> 2024-10-31 10:33</h2>
                     
         <div class="summary">
             <strong>feat: job list parameters</strong>
@@ -371,7 +393,7 @@
     
 
                 <div class="section">
-                    <h2 class="title"><span class="dot"></span> 2024-10-31 08:33</h2>
+                    <h2 class="title"><span class="dot"></span> 2024-10-31 10:33</h2>
                     
         <div class="summary">
             <strong>feat: employer list, detail endpoints</strong>
@@ -419,7 +441,7 @@
     
 
                 <div class="section">
-                    <h2 class="title"><span class="dot"></span> 2024-10-30 15:36</h2>
+                    <h2 class="title"><span class="dot"></span> 2024-10-30 17:36</h2>
                     
         <div class="summary">
             <strong>feat: added `DELETE /jobs/{id}` endpoint</strong>
