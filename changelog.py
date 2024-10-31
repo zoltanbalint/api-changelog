@@ -12,7 +12,7 @@ def changelog():
     branding = os.getenv("BRAND_NAME")
     apidoc_url = os.getenv("APIDOC_URL")
 
-    html_rows = []
+    changelog_rows = {}
     for file in sorted(os.listdir("changelog/html"), reverse=True):
         if file.endswith(".html"):
             with open("changelog/html/" + file, "r") as f:
@@ -36,9 +36,11 @@ def changelog():
 
                 # html row: date, link to git commit, changes
                 summary = dump_summary(metadata)
-                html_rows.append(f"""
+                day = datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d')
+                if day not in changelog_rows:
+                    changelog_rows[day] = []
+                changelog_rows[day].append(f"""
                 <div class="section">
-                    <h2 class="title"><span class="dot"></span> {datetime.datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M')}</h2>
                     {summary}
                     <div class="separator"></div>
                     {body}
@@ -46,6 +48,14 @@ def changelog():
     """)
 
     # dump to index.html file based on template.html, replace {{ROWS}} with html_rows
+
+    html_rows = []
+    for day, rows in changelog_rows.items():
+        row = f"""<h2 class="title"><span class="dot"></span> {day}</h2>"""
+        html_rows.append(
+            f"""<h2 class="title"><span class="dot"></span> {day}</h2>""" +
+            "\n".join(rows)
+        )
 
     with open("template.html", "r") as f:
         template = f.read()
@@ -71,10 +81,10 @@ def dump_summary(_metadata: dict) -> str:
 
         rows.append(f"""
         <div class="summary">
+            <a class="small d-block" target="_blank" href="{commit['url']}">view on GitHub &raquo; {commit['id'][:8]}</a>
             <strong>{title}</strong>
             <div class="content">
                 {markdown.markdown(content)}
-                <div class="link"><a target="_blank" href="{commit['url']}">View code changes [{commit['id'][:8]}]</a></div>
             </div>
         </div>
         """)
