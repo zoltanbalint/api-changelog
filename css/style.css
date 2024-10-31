@@ -50,12 +50,12 @@ code {
 
 .dot {
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
     background-color: #016BF8;
     position: absolute;
     left: -54px;
-    top:8px;
+    top: 8px;
     border-radius: 100%;
     border: 5px solid #b4d4ff;
 }
@@ -72,7 +72,7 @@ code {
     border-bottom: 1px solid #dedede;
     box-shadow: #AAA 0 0 10px;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 9999;
 }
 
@@ -84,6 +84,7 @@ code {
     .container {
         padding: 1rem;
     }
+
     .branding h1 {
         font-size: 1.5rem;
     }
@@ -93,6 +94,7 @@ code {
     .container {
         padding: 2rem 10rem;
     }
+
     .branding {
         padding: 2rem 10rem;
     }
@@ -112,7 +114,7 @@ code {
 /** CHANGELOG **/
 
 .summary {
-    padding:1rem 0 0 0;
+    padding: 1rem 0 0 0;
 }
 
 .summary .content {
@@ -120,8 +122,8 @@ code {
 }
 
 .summary > h3 {
-    margin-top:0;
-    padding-top:0;
+    margin-top: 0;
+    padding-top: 0;
     font-size: 1.5rem;
 }
 
