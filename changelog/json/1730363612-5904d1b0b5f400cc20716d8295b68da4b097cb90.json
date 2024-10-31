@@ -1,0 +1,1 @@
+[{"id":"endpoint-added","text":"endpoint added","level":1,"operation":"GET","operationId":"listEmployers","path":"/v1/employers","source":"/output/current.json","section":"paths"},{"id":"endpoint-added","text":"endpoint added","level":1,"operation":"GET","operationId":"employerDetail","path":"/v1/employers/{id}","source":"/output/current.json","section":"paths"}]
