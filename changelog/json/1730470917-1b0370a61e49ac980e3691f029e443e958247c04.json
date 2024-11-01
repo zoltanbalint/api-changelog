@@ -1,0 +1,1 @@
+[{"id":"endpoint-added","text":"endpoint added","level":1,"operation":"POST","operationId":"job_applicant_hired","path":"/v1/jobs/{id}/applicants/{applicantId}/hired","source":"/output/current.json","section":"paths"}]
