@@ -1,0 +1,1 @@
+[{"id":"endpoint-added","text":"endpoint added","level":1,"operation":"DELETE","operationId":"deleteEmployer","path":"/v1/employers/{id}","source":"/input/current.json","section":"paths"}]
